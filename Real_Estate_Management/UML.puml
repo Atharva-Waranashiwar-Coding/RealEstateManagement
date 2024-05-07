@@ -1,0 +1,95 @@
+@startuml
+annotation java.lang.Override
+class java.io.IOException
+class java.io.InputStream
+class java.util.ArrayList
+class java.util.Date
+class java.util.Enumeration
+class java.util.Properties
+class java.util.Random
+class javax.activation.DataHandler
+class javax.mail.Address
+class javax.mail.Flags
+class javax.mail.Header
+class javax.mail.Message
+class javax.mail.MessagingException
+class javax.mail.Multipart
+class javax.mail.Session
+class javax.mail.internet.InternetAddress
+class model.Ecosystem.Business
+class model.Ecosystem.ConfigureABusiness
+class model.Ecosystem.mailer.EmailUtil
+class model.Ecosystem.mailer.MessagesClass
+class model.Ecosystem.mailer.SimpleTextMessage
+class model.Employee.Broker
+class model.Employee.Employee
+class model.Employee.EmployeeDirectory
+class model.Employee.Supervisor
+class model.Enterprise.Enterprise
+class model.Enterprise.EnterpriseDirectory
+class model.Enterprise.RealEstateAgencyEnterprise
+class model.Enterprise.SystemAdminEnterprise
+class model.Enterprise.ViewerEnterprise
+class model.Organisation.Organisation
+class model.Organisation.OrganisationDirectory
+class model.Organisation.PropertyManagementOrganisation
+class model.Organisation.SupervisorOrganisation
+class model.Organisation.SystemAdminOrganisation
+class model.Organisation.ViewerOrganisation
+class model.Property.Offer
+class model.Property.Property
+class model.Property.PropertyDirectory
+class model.SystemAdmin.SystemAdmin
+class model.SystemAdmin.SystemAdminDirectory
+class model.UserAccount.UserAccount
+class model.UserAccount.UserAccountDirectory
+class model.Viewer.Viewer
+class model.Viewer.ViewerDirectory
+model.Ecosystem.Business ..> model.Enterprise.Enterprise
+model.Ecosystem.Business ..> model.Enterprise.EnterpriseDirectory
+model.Ecosystem.Business ..> model.Property.Property
+model.Ecosystem.Business ..> model.Property.PropertyDirectory
+model.Ecosystem.Business ..> model.UserAccount.UserAccountDirectory
+model.Ecosystem.ConfigureABusiness ..> java.util.ArrayList
+model.Ecosystem.ConfigureABusiness ..> java.util.Random
+model.Ecosystem.ConfigureABusiness ..> model.Employee.Broker
+model.Ecosystem.ConfigureABusiness ..> model.Employee.Employee
+model.Ecosystem.ConfigureABusiness ..> model.Employee.EmployeeDirectory
+model.Ecosystem.ConfigureABusiness ..> model.Employee.Supervisor
+model.Ecosystem.ConfigureABusiness ..> model.Enterprise.Enterprise
+model.Ecosystem.ConfigureABusiness ..> model.Enterprise.EnterpriseDirectory
+model.Ecosystem.ConfigureABusiness ..> model.Enterprise.RealEstateAgencyEnterprise
+model.Ecosystem.ConfigureABusiness ..> model.Enterprise.SystemAdminEnterprise
+model.Ecosystem.ConfigureABusiness ..> model.Enterprise.ViewerEnterprise
+model.Ecosystem.ConfigureABusiness ..> model.Organisation.Organisation
+model.Ecosystem.ConfigureABusiness ..> model.Organisation.OrganisationDirectory
+model.Ecosystem.ConfigureABusiness ..> model.Organisation.PropertyManagementOrganisation
+model.Ecosystem.ConfigureABusiness ..> model.Organisation.SupervisorOrganisation
+model.Ecosystem.ConfigureABusiness ..> model.Organisation.SystemAdminOrganisation
+model.Ecosystem.ConfigureABusiness ..> model.Organisation.ViewerOrganisation
+model.Ecosystem.ConfigureABusiness ..> model.Property.Offer
+model.Ecosystem.ConfigureABusiness ..> model.Property.Property
+model.Ecosystem.ConfigureABusiness ..> model.Property.PropertyDirectory
+model.Ecosystem.ConfigureABusiness ..> model.SystemAdmin.SystemAdmin
+model.Ecosystem.ConfigureABusiness ..> model.SystemAdmin.SystemAdminDirectory
+model.Ecosystem.ConfigureABusiness ..> model.UserAccount.UserAccount
+model.Ecosystem.ConfigureABusiness ..> model.UserAccount.UserAccountDirectory
+model.Ecosystem.ConfigureABusiness ..> model.Viewer.Viewer
+model.Ecosystem.ConfigureABusiness ..> model.Viewer.ViewerDirectory
+model.Ecosystem.mailer.EmailUtil ..> java.lang.Override
+model.Ecosystem.mailer.EmailUtil ..> java.util.Properties
+model.Ecosystem.mailer.SimpleTextMessage ..> java.lang.Override
+model.Ecosystem.mailer.SimpleTextMessage ..> java.io.IOException
+model.Ecosystem.mailer.SimpleTextMessage ..> java.io.InputStream
+model.Ecosystem.mailer.SimpleTextMessage ..> java.util.Date
+model.Ecosystem.mailer.SimpleTextMessage ..> java.util.Enumeration
+model.Ecosystem.mailer.SimpleTextMessage ..> javax.activation.DataHandler
+model.Ecosystem.mailer.SimpleTextMessage ..> javax.mail.Address
+model.Ecosystem.mailer.SimpleTextMessage ..> javax.mail.Flags
+model.Ecosystem.mailer.SimpleTextMessage ..> javax.mail.Header
+model.Ecosystem.mailer.SimpleTextMessage --|> javax.mail.Message
+model.Ecosystem.mailer.SimpleTextMessage ..> javax.mail.MessagingException
+model.Ecosystem.mailer.SimpleTextMessage ..> javax.mail.Multipart
+model.Ecosystem.mailer.SimpleTextMessage ..> javax.mail.Session
+model.Ecosystem.mailer.SimpleTextMessage ..> javax.mail.internet.InternetAddress
+@enduml

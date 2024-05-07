@@ -1,0 +1,13 @@
+@startuml
+annotation java.lang.Override
+class java.util.ArrayList
+class model.Property.Offer
+class model.UserAccount.UserAccount
+class model.Viewer.Viewer
+class model.Viewer.ViewerDirectory
+model.Viewer.Viewer ..> java.lang.Override
+model.Viewer.Viewer ..> java.util.ArrayList
+model.Viewer.Viewer ..> model.Property.Offer
+model.Viewer.Viewer --|> model.UserAccount.UserAccount
+model.Viewer.ViewerDirectory ..> java.util.ArrayList
+@enduml

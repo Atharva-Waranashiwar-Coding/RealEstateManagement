@@ -1,0 +1,23 @@
+@startuml
+class java.util.ArrayList
+class model.Employee.EmployeeDirectory
+class model.Organisation.Organisation
+class model.Organisation.OrganisationDirectory
+class model.Organisation.PropertyManagementOrganisation
+class model.Organisation.SupervisorOrganisation
+class model.Organisation.SystemAdminOrganisation
+class model.Organisation.ViewerOrganisation
+class model.SystemAdmin.SystemAdminDirectory
+class model.UserAccount.UserAccountDirectory
+class model.Viewer.ViewerDirectory
+model.Organisation.Organisation ..> model.UserAccount.UserAccountDirectory
+model.Organisation.OrganisationDirectory ..> java.util.ArrayList
+model.Organisation.PropertyManagementOrganisation ..> model.Employee.EmployeeDirectory
+model.Organisation.PropertyManagementOrganisation --|> model.Organisation.Organisation
+model.Organisation.SupervisorOrganisation ..> model.Employee.EmployeeDirectory
+model.Organisation.SupervisorOrganisation --|> model.Organisation.Organisation
+model.Organisation.SystemAdminOrganisation --|> model.Organisation.Organisation
+model.Organisation.SystemAdminOrganisation ..> model.SystemAdmin.SystemAdminDirectory
+model.Organisation.ViewerOrganisation --|> model.Organisation.Organisation
+model.Organisation.ViewerOrganisation ..> model.Viewer.ViewerDirectory
+@enduml

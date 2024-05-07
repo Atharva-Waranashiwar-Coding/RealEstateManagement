@@ -1,0 +1,40 @@
+@startuml
+annotation java.lang.Override
+class java.util.ArrayList
+class model.Employee.Broker
+class model.Employee.Employee
+class model.Employee.Supervisor
+class model.Enterprise.Enterprise
+class model.Enterprise.EnterpriseDirectory
+class model.Enterprise.RealEstateAgencyEnterprise
+class model.Enterprise.SystemAdminEnterprise
+class model.Enterprise.ViewerEnterprise
+class model.Organisation.Organisation
+class model.Organisation.OrganisationDirectory
+class model.Organisation.PropertyManagementOrganisation
+class model.Organisation.SupervisorOrganisation
+class model.Organisation.SystemAdminOrganisation
+class model.Organisation.ViewerOrganisation
+class model.Property.Property
+model.Enterprise.Enterprise ..> java.lang.Override
+model.Enterprise.Enterprise ..> java.util.ArrayList
+model.Enterprise.Enterprise ..> model.Employee.Broker
+model.Enterprise.Enterprise ..> model.Employee.Employee
+model.Enterprise.Enterprise ..> model.Organisation.Organisation
+model.Enterprise.Enterprise ..> model.Organisation.OrganisationDirectory
+model.Enterprise.Enterprise ..> model.Organisation.PropertyManagementOrganisation
+model.Enterprise.Enterprise ..> model.Property.Property
+model.Enterprise.EnterpriseDirectory ..> java.util.ArrayList
+model.Enterprise.RealEstateAgencyEnterprise ..> java.util.ArrayList
+model.Enterprise.RealEstateAgencyEnterprise ..> model.Employee.Broker
+model.Enterprise.RealEstateAgencyEnterprise ..> model.Employee.Employee
+model.Enterprise.RealEstateAgencyEnterprise ..> model.Employee.Supervisor
+model.Enterprise.RealEstateAgencyEnterprise --|> model.Enterprise.Enterprise
+model.Enterprise.RealEstateAgencyEnterprise ..> model.Organisation.Organisation
+model.Enterprise.RealEstateAgencyEnterprise ..> model.Organisation.PropertyManagementOrganisation
+model.Enterprise.RealEstateAgencyEnterprise ..> model.Organisation.SupervisorOrganisation
+model.Enterprise.SystemAdminEnterprise --|> model.Enterprise.Enterprise
+model.Enterprise.SystemAdminEnterprise ..> model.Organisation.SystemAdminOrganisation
+model.Enterprise.ViewerEnterprise --|> model.Enterprise.Enterprise
+model.Enterprise.ViewerEnterprise ..> model.Organisation.ViewerOrganisation
+@enduml

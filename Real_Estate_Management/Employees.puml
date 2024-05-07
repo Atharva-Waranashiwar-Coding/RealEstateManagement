@@ -1,0 +1,19 @@
+@startuml
+annotation java.lang.Override
+class java.util.ArrayList
+class model.Employee.Broker
+class model.Employee.Employee
+class model.Employee.EmployeeDirectory
+class model.Employee.Supervisor
+class model.Property.Offer
+class model.Property.Property
+class model.UserAccount.UserAccount
+model.Employee.Broker ..> java.lang.Override
+model.Employee.Broker ..> java.util.ArrayList
+model.Employee.Broker --|> model.Employee.Employee
+model.Employee.Broker ..> model.Property.Offer
+model.Employee.Broker ..> model.Property.Property
+model.Employee.Employee --|> model.UserAccount.UserAccount
+model.Employee.EmployeeDirectory ..> java.util.ArrayList
+model.Employee.Supervisor --|> model.Employee.Employee
+@enduml
